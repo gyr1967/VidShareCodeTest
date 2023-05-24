@@ -6,7 +6,11 @@
       <button type="submit" :disabled="!file" :class="{ 'disabled': !file }">Upload</button>
     </form>
     <p v-if="link">Share this download link:</p>
-    <a href="link" v-if="link">{{ link }}</a>
+    <a :href="link" v-if:="link">Download here!</a>
+    <br>
+    <br>
+    <p v-if="link">If that doesn't work, try copying this link into your browser:</p>
+    <p v-if="link">{{ link }}</p>
   </div>
 </template>
 
