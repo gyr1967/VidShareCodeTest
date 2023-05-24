@@ -3,10 +3,12 @@ const multer = require("multer");
 const AWS = require("aws-sdk");
 const env = require("dotenv").config();
 const fs = require("fs");
+const cors = require("cors");
 
 const upload = multer({ dest: "uploads/" });
 
 const app = express();
+app.use(cors());
 
 AWS.config.update({
   accessKeyId: process.env.aws_access_key,
