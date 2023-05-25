@@ -10,6 +10,6 @@ It's hosted and available at this link [here](https://cosmic-manatee-20361c.netl
 About the site:
 - It takes a file upload from your local machine, and uploads it to an AWS bucket
 - Returns a link to the user that is active for one hour which will download the file uploaded
-
+- The deployed version will likely take a minute to return a response. This is likely due to the free tier deployments I have, as this issue didn't occur when running locally (still using AWS bucket)
 
 
